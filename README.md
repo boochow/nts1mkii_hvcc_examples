@@ -42,15 +42,15 @@ If you want to modify the patches yourself, follow these steps:
 
 ### Oscillator
 
-- **Sync.pd**  
+- **Sync.pd** 
   Sync'ed sine wave oscillator.
-- **Detune.pd**  
+- **Detune.pd** 
   Two sine wave oscillators with slightly different frequency.
-- **MixAUX.pd**  
+- **MixAUX.pd** 
   A simple sawtooth oscillator using `[phasor~]` is mixed with the sound from AUX IN.
-- **Draw.pd**  
+- **Draw.pd** 
   A hand-draw waveform oscillator.
-- **6ch_Vocoder.pd**  
+- **6ch_Vocoder.pd** 
   6-band channel vocoder using  `[hv.envfollow~]` in `heavylib`.
 
 **NOTE**: More oscillator patches are available at [boochow/loguesdk\_hvcc\_examples](https://github.com/boochow/loguesdk_hvcc_examples)
@@ -71,36 +71,25 @@ If you want to modify the patches yourself, follow these steps:
 ### Delay FX
 
 - **Echo.pd** 
-
   Simple echo back effect.
-
 - **MonoDelay.pd** 
   Single channel delay with low pass filter.
-
 - **Chorus.pd** 
   Single channel chorus.
-
 - **Comb.pd** 
   Comb filter.
-
 - **FreqShift.pd** 
   Frequency shifter using `[hv.freqshift~]`in `heavylib`.
 
 ### Reverb FX
 
 - **StereoDelay.pd** 
-
   Stereo version of `MonoDelay.pd`.
-
 - **StereoChorus.pd** 
   Stereo version of `Chorus.pd`.
-
 - **Reflection.pd** 
   A pair of short delay with different delay time.
-
 - **Rings.pd** 
   Stereo version of `Ring.pd`.
-
 - **Comp.pd** 
   Compressor using `[hv.compressor~]`in `heavylib`.
-
