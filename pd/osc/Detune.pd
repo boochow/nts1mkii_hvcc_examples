@@ -1,8 +1,8 @@
-#N canvas 827 239 527 327 12;
+#N canvas 546 250 637 419 12;
 #X obj 14 26 r pitch @hv_param;
 #X obj 17 54 hsl 128 17 50 10000 1 0 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X obj 14 244 phasor~;
-#X obj 14 301 dac~ 1;
+#X obj 14 324 dac~ 1;
 #X obj 177 54 hsl 128 17 0 1 0 0 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X obj 174 24 r shape_f @hv_param;
 #X obj 174 98 * 0.05946;
@@ -10,7 +10,11 @@
 #X obj 174 206 *;
 #X obj 174 244 phasor~;
 #X obj 174 161 t b f;
-#X text 267 97 1.05946 = 2^(1/12);
+#X text 252 98 1.05946 = 2^(1/12);
+#X obj 250 249 hsl 128 17 0 1 0 0 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 0 1;
+#X obj 247 219 r alt_f @hv_param;
+#X obj 174 274 *~;
+#X text 219 154 this can be omitted on the logue sdk because pitch is continuously received;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 0 8 0;
@@ -20,6 +24,9 @@
 #X connect 6 0 7 0;
 #X connect 7 0 10 0;
 #X connect 8 0 9 0;
-#X connect 9 0 3 0;
+#X connect 9 0 14 0;
 #X connect 10 0 8 0;
 #X connect 10 1 8 1;
+#X connect 12 0 14 1;
+#X connect 13 0 12 0;
+#X connect 14 0 3 0;
