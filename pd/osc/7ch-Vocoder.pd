@@ -43,7 +43,7 @@
 #X connect 6 0 1 1;
 #X connect 7 0 6 0;
 #X connect 8 0 1 0;
-#X restore 30 197 pd chan 245;
+#X restore 30 197 pd chan 267;
 #N canvas 160 160 562 300 chan 0;
 #X obj 223 35 inlet~;
 #X obj 223 178 *~;
@@ -79,7 +79,7 @@
 #X connect 6 0 1 1;
 #X connect 7 0 6 0;
 #X connect 8 0 1 0;
-#X restore 63 222 pd chan 367;
+#X restore 63 222 pd chan 444;
 #N canvas 160 160 450 362 chan 0;
 #X obj 223 35 inlet~;
 #X obj 223 178 *~;
@@ -115,7 +115,7 @@
 #X connect 6 0 1 1;
 #X connect 7 0 6 0;
 #X connect 8 0 1 0;
-#X restore 96 247 pd chan 551;
+#X restore 96 247 pd chan 741;
 #N canvas 160 160 450 300 chan 0;
 #X obj 223 35 inlet~;
 #X obj 223 178 *~;
@@ -151,7 +151,7 @@
 #X connect 6 0 1 1;
 #X connect 7 0 6 0;
 #X connect 8 0 1 0;
-#X restore 129 272 pd chan 827;
+#X restore 129 272 pd chan 1235;
 #N canvas 160 160 450 300 chan 0;
 #X obj 223 35 inlet~;
 #X obj 223 178 *~;
@@ -187,7 +187,7 @@
 #X connect 6 0 1 1;
 #X connect 7 0 6 0;
 #X connect 8 0 1 0;
-#X restore 162 297 pd chan 1240;
+#X restore 162 297 pd chan 2058;
 #N canvas 160 160 450 300 chan 0;
 #X obj 223 35 inlet~;
 #X obj 223 178 *~;
@@ -223,7 +223,7 @@
 #X connect 6 0 1 1;
 #X connect 7 0 6 0;
 #X connect 8 0 1 0;
-#X restore 195 322 pd chan 1860;
+#X restore 195 322 pd chan 3429;
 #N canvas 160 160 450 300 chan 0;
 #X obj 223 35 inlet~;
 #X obj 223 178 *~;
