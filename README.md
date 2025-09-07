@@ -1,12 +1,12 @@
 # hvcc NTS-1 mkII Examples
 
-This repository contains Pure Data patches written for [hvcc_nts1mkii](https://github.com/boochow/hvcc_nts1mkii).
+This repository provides Pure Data patches for [hvcc_nts1mkii](https://github.com/boochow/hvcc_nts1mkii).
 
 ## How to Use
 
 If you want to try the pre-built samples, download the binaries from the Releases page.
 
-If you want to modify the patches yourself, follow these steps:
+To build or modify patches yourself, follow these steps:
 
 1. **Install Prerequisites:**  
    Install hvcc, logue SDK, and [hvcc_nts1mkii](https://github.com/boochow/hvcc_nts1mkii).
@@ -19,20 +19,18 @@ If you want to modify the patches yourself, follow these steps:
    ```
 
 3. **Edit the Makefile:**  
-   Open the Makefile and modify the following line to match the path where your logue SDK is located:
+   Edit the `Makefile` so that PLATFORMDIR points to your logue SDK installation:
    ```
    PLATFORMDIR ?= $(HOME)/logue-sdk/platform
    ```
-
 4. **Build the Units:**  
    To build all units, run:
-   
    ```bash
    make
    ```
    
-5. **Build A Specific Unit (Optional):**  
-   The Pure Data patches are located in the `pd/` directory. You can build a specific patch by specifying its name without file extension. For example:
+5. **Build a specific unit (optional)**
+   The Pure Data patches are located in the `pd/` directory. To build one, specify the patch name without its extension:
    
    ```bash
    make Sync
@@ -43,43 +41,43 @@ If you want to modify the patches yourself, follow these steps:
 ### Oscillator
 
 - **Sync.pd** 
-  Sync'ed sine wave oscillator.
+  Synced sine wave oscillator.
 - **Detune.pd** 
-  Two sine wave oscillators with slightly different frequency.
+  Two sine oscillators with slightly different frequencies.
 - **MixAUX.pd** 
-  A simple sawtooth oscillator using `[phasor~]` is mixed with the sound from AUX IN.
+  Sawtooth oscillator ([phasor~]) mixed with AUX IN.
 - **Draw.pd** 
-  A hand-draw waveform oscillator.
-- **7ch_Vocoder.pd** 
-  7-band channel vocoder.
+  Hand-drawn waveform oscillator.
+- **7ch-Vocoder.pd**
+  7-band vocoder.
 
-**NOTE**: More oscillator patches are available at [boochow/loguesdk\_hvcc\_examples](https://github.com/boochow/loguesdk_hvcc_examples)
+**Additional oscillator patches**: More oscillator patches are available at [boochow/loguesdk\_hvcc\_examples](https://github.com/boochow/loguesdk_hvcc_examples)
 
 ### Modulation FX
 
 - **SampHold.pd** 
-  Resample the input sound in low sampling frequency (400 Hz-16 KHz).
+  Resamples the input at 400 Hz–16 kHz.
 - **BitCrush.pd**
-  Change sampling quantization bit depth.
+  Reduces quantization bit depth.
 - **Ring.pd** 
-  Ring modulation with sine wave.
+  Ring modulation with a sine wave.
 - **ChangeVol.pd**
-  Change the input sound volume.
+  Input volume control.
 - **Cosine.pd**
-  Waveshaper with cosine function.
+  Cosine waveshaper.
 
 ### Delay FX
 
 - **Echo.pd** 
-  Simple echo back effect.
+  Simple echo effect.
 - **MonoDelay.pd** 
-  Single channel delay with low pass filter.
+  Mono delay with low-pass filter.
 - **Chorus.pd** 
-  Single channel chorus.
+  Mono chorus.
 - **Comb.pd** 
   Comb filter.
 - **FreqShift.pd** 
-  Frequency shifter using `[hv.freqshift~]`in `heavylib`.
+  Frequency shifter (`[hv.freqshift~]` in `heavylib`).
 
 ### Reverb FX
 
@@ -89,7 +87,7 @@ If you want to modify the patches yourself, follow these steps:
   Stereo version of `Chorus.pd`.
 - **Reflection.pd** 
   A pair of short delay with different delay time.
-- **Rings.pd** 
-  Stereo version of `Ring.pd`.
+- **Canceller.pd**
+  Adds the phase-inverted signal from the opposite channel.
 - **Comp.pd** 
   Compressor using `[hv.compressor~]`in `heavylib`.
