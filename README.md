@@ -50,8 +50,8 @@ If you want to modify the patches yourself, follow these steps:
   A simple sawtooth oscillator using `[phasor~]` is mixed with the sound from AUX IN.
 - **Draw.pd** 
   A hand-draw waveform oscillator.
-- **6ch_Vocoder.pd** 
-  6-band channel vocoder using  `[hv.envfollow~]` in `heavylib`.
+- **7ch_Vocoder.pd** 
+  7-band channel vocoder.
 
 **NOTE**: More oscillator patches are available at [boochow/loguesdk\_hvcc\_examples](https://github.com/boochow/loguesdk_hvcc_examples)
 
@@ -65,8 +65,8 @@ If you want to modify the patches yourself, follow these steps:
   Ring modulation with sine wave.
 - **ChangeVol.pd**
   Change the input sound volume.
-- **ChangeVol.pd**
-  Invert signal from the right channel.
+- **Cosine.pd**
+  Waveshaper with cosine function.
 
 ### Delay FX
 
