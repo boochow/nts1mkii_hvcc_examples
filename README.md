@@ -9,7 +9,7 @@ If you want to try the pre-built samples, download the binaries from the Release
 To build or modify patches yourself, follow these steps:
 
 1. **Install Prerequisites:**  
-   Install hvcc, logue SDK, and [hvcc_nts1mkii](https://github.com/boochow/hvcc_nts1mkii).
+   Install hvcc, the logue SDK, and [hvcc_nts1mkii](https://github.com/boochow/hvcc_nts1mkii).
 
 2. **Clone the Repository:**  
    Copy this repository to your local machine:
@@ -29,7 +29,7 @@ To build or modify patches yourself, follow these steps:
    make
    ```
    
-5. **Build a specific unit (optional)**
+5. **Build a specific unit (optional):**
    The Pure Data patches are located in the `pd/` directory. To build one, specify the patch name without its extension:
    
    ```bash
@@ -47,13 +47,13 @@ To build or modify patches yourself, follow these steps:
 - **Draw.pd** 
   Hand-drawn waveform oscillator.
 - **PitchShift.pd** 
-  Shift the pitch of sound from AUX IN.
+  Shifts the pitch of the AUX IN signal.
 - **7ch-Vocoder.pd**
-  7-band vocoder. Connect modulator (voice) signal to AUX IN.
+  7-band vocoder. Connect the modulator (voice) signal to AUX IN.
 
-To enable AUX IN for oscillator units, hold the REVERB button and turn NTS-1 mkII on, then set the `Inr.` value to `0`.
+To enable AUX IN for oscillator units, hold the REVERB button and turn NTS-1 mkII on, then set the `Inr.` value to `0`. Press ARP to save and restart.
 
-**Additional oscillator patches**: More oscillator patches are available at [boochow/loguesdk\_hvcc\_examples](https://github.com/boochow/loguesdk_hvcc_examples)
+**Additional oscillator patches**: More patches are available at [boochow/loguesdk\_hvcc\_examples](https://github.com/boochow/loguesdk_hvcc_examples)
 
 ### Modulation FX
 
@@ -88,8 +88,8 @@ To enable AUX IN for oscillator units, hold the REVERB button and turn NTS-1 mkI
 - **StereoChorus.pd** 
   Stereo version of `Chorus.pd`.
 - **Reflection.pd** 
-  A pair of short delay with different delay time.
+  A pair of short delays with different times.
 - **Canceller.pd**
-  Adds the phase-inverted signal from the opposite channel.
+  Adds the phase-inverted signal from the opposite channel (vocal canceller).
 - **Comp.pd** 
-  Compressor using `[hv.compressor~]`in `heavylib`.
+  Compressor (`[hv.compressor~]` in `heavylib`).
