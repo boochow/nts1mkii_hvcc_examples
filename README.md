@@ -44,12 +44,14 @@ To build or modify patches yourself, follow these steps:
   Synced sine wave oscillator.
 - **Detune.pd** 
   Two sine oscillators with slightly different frequencies.
-- **MixAUX.pd** 
-  Sawtooth oscillator ([phasor~]) mixed with AUX IN.
 - **Draw.pd** 
   Hand-drawn waveform oscillator.
+- **PitchShift.pd** 
+  Shift the pitch of sound from AUX IN.
 - **7ch-Vocoder.pd**
-  7-band vocoder.
+  7-band vocoder. Connect modulator (voice) signal to AUX IN.
+
+To enable AUX IN for oscillator units, hold the REVERB button and turn NTS-1 mkII on, then set the `Inr.` value to `0`.
 
 **Additional oscillator patches**: More oscillator patches are available at [boochow/loguesdk\_hvcc\_examples](https://github.com/boochow/loguesdk_hvcc_examples)
 
@@ -82,7 +84,7 @@ To build or modify patches yourself, follow these steps:
 ### Reverb FX
 
 - **StereoDelay.pd** 
-  Stereo version of `MonoDelay.pd`.
+  Ping-pong delay with low-pass filter.
 - **StereoChorus.pd** 
   Stereo version of `Chorus.pd`.
 - **Reflection.pd** 
