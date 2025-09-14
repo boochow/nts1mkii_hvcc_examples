@@ -83,6 +83,8 @@ To enable AUX IN for oscillator units, hold the REVERB button and turn NTS-1 mkI
 
 ### Reverb FX
 
+Due to size limitations, implementing true reverb effects in Pure Data is difficult, so this section provides various effects instead.
+
 - **StereoDelay.pd** 
   Ping-pong delay with low-pass filter.
 - **StereoChorus.pd** 
